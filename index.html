@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- W3C style sheet for grid -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Haukai Restaurant</title>
+</head>
+<body>
+  <div class="w3-display-container">
+    <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%">
+    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+    <div class="w3-bar w3-display-topleft w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Hours</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+      </div>
+      
+      <div id="dropNav" class="w3-bar-block w3-display-topleft w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button">Contact</a>
+        <a href="#" class="w3-bar-item w3-button">Hours</a>
+        <a href="#" class="w3-bar-item w3-button">Menu</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
+      </div>
+
+   <heading class= "w3-display-middle w3-container w3-text-white">
+       <h1>Haukai Restaurant</h1>
+   </heading>
+
+<!--row for quick link boxes (menu, dine, learn)-->
+   <div class="w3-row w3-display-bottomleft">
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+      <h2>Dine</h2> 
+    </div>
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+      <h2>Learn</h2> 
+    </div>
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+      <h2>Menu</h2> 
+    </div>
+  </div>
+</div>
+  <!--row for quick info bar (hours, contact, map)-->
+  <div class="w3-row">
+    <div class="w3-third w3-container w3-grey w3-center">
+      <h2>Opening Hours:</h2> 
+    </div>
+    <div class="w3-third w3-container w3-grey w3-center">
+      <h2>Contact:</h2> 
+    </div>
+    <div class="w3-third w3-container w3-grey w3-center">
+        <h2>Map:</h2> 
+      </div>
+  </div>
+
+  <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("dropNav");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+
+
+</body>
+<footer class="w3-container w3-black w3-center">
+<p>footer info</p>
+</footer>
+</html>
