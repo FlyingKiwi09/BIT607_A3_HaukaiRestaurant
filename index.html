@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="/CSS/styles.css">
     <title>Haukai Restaurant</title>
 </head>
-<body>
+<body style = "max-width:1200px; margin-left: auto; margin-right:auto">
   <div class="w3-display-container">
-    <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%">
+    <!--background image-->
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/restaurantBackgroundMobile.jpg" alt="Restaurant Background" style="width:100%">
+      <source media="min-width:600px)" srcset="images/restaurantBackground.jpg" alt ="Restaurant Background" style="width:100%;min-height:200px;max-height:400px">
+      <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%">
+    </picture>
+   
+
+    <!--Navigation bar-->
     <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
-    <div class="w3-bar w3-display-topleft w3-light-grey">
+    <div class="w3-bar w3-display-topleft w3-light-grey w3-margin-top">
         <a href="#" class="w3-bar-item w3-button">Home</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small">Hours</a>
@@ -20,7 +28,8 @@
         <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
       </div>
-      
+
+      <!--drop down Navigation bar for small screens-->
       <div id="dropNav" class="w3-bar-block w3-display-topleft w3-light-grey w3-hide w3-hide-large w3-hide-medium">
         <a href="#" class="w3-bar-item w3-button">Contact</a>
         <a href="#" class="w3-bar-item w3-button">Hours</a>
@@ -28,33 +37,48 @@
         <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
       </div>
 
-   <heading class= "w3-display-middle w3-container w3-text-white">
-       <h1>Haukai Restaurant</h1>
-   </heading>
-
 <!--row for quick link boxes (menu, dine, learn)-->
    <div class="w3-row w3-display-bottomleft">
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+<!-- heading is here so it sits on top of quick link boxes-->
+    <heading class= " w3-container w3-text-white ">
+      <h1 class ="w3-jumbo w3-margin">Haukai Restaurant</h1>
+    </heading>
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
+      <p>Make your booking to</p>
       <h2>Dine</h2> 
     </div>
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
       <h2>Learn</h2> 
+      <p>about our food, cultureand recipes</p>
     </div>
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round">
+    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
+      <p>Check what's on the</p>
       <h2>Menu</h2> 
     </div>
   </div>
 </div>
+
+
+
   <!--row for quick info bar (hours, contact, map)-->
-  <div class="w3-row">
-    <div class="w3-third w3-container w3-grey w3-center">
-      <h2>Opening Hours:</h2> 
+  <div class="w3-row w3-grey">
+    <div class="w3-col s12 m3 l4 w3-container w3-center">
+      <h3>Opening Hours:</h3>
+      <p>Wed, Thurs, Fri, Sat, Sun</p>
+      <p>5pm - late</p> 
+      <br>
+      <p>Bookings Recommended</p>
     </div>
-    <div class="w3-third w3-container w3-grey w3-center">
-      <h2>Contact:</h2> 
+    <div class="w3-col s12 m3 l4 w3-container w3-center">
+      <h3>Contact:</h3> 
+      <p>000 948 7822</p>
+      <p>restaurant@email.com</p>
+      <h3>Address:</h3> 
+      <p>14 restaurant street</p>
+      <p>City</p>
     </div>
-    <div class="w3-third w3-container w3-grey w3-center">
-        <h2>Map:</h2> 
+    <div class="w3-col s12 m6 l4 w3-container w3-center w3-padding">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz" width="300"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
   </div>
 
