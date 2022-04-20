@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <!-- W3C style sheet for grid -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    
     <title>Haukai Restaurant</title>
 </head>
 <body style = "max-width:1200px; margin-left: auto; margin-right:auto">
-  <div class="w3-display-container">
+  
+     <!--Navigation bar-->
+    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
+    <div class="w3-bar  w3-light-grey ">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="pages/contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+      <a href="pages/hours.html" class="w3-bar-item w3-button w3-hide-small">Hours</a>
+      <a href="pages/menu.html" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+      <a href="pages/reservations.html" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <!--drop down Navigation bar for small screens-->
+  <div id="dropNav" class="w3-bar-block  w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+      <a href="pages/contact.html" class="w3-bar-item w3-button">Contact</a>
+      <a href="pages/hours.html" class="w3-bar-item w3-button">Hours</a>
+      <a href="pages/menu.html" class="w3-bar-item w3-button">Menu</a>
+      <a href="pages/reservations.html" class="w3-bar-item w3-button">Reservation</a>
+  </div>
+    
+  
+  <div class="w3-display-container" >
     <!--background image-->
     <picture>
-      <source media="(max-width: 600px)" srcset="images/restaurantBackgroundMobile.jpg" alt="Restaurant Background" style="width:100%">
-      <source media="min-width:600px)" srcset="images/restaurantBackground.jpg" alt ="Restaurant Background" style="width:100%;min-height:200px;max-height:400px">
-      <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%">
+      <source media="(max-width: 599px)" srcset="images/restaurantBackgroundMobile.jpg" alt="Restaurant Background" style="width:100%">
+     
+      <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%;min-height:200px;">
     </picture>
    
 
-    <!--Navigation bar-->
-    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
-    <div class="w3-bar w3-display-topleft w3-light-grey w3-margin-top">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Hours</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Menu</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-      </div>
-
-      <!--drop down Navigation bar for small screens-->
-      <div id="dropNav" class="w3-bar-block w3-display-topleft w3-light-grey w3-hide w3-hide-large w3-hide-medium">
-        <a href="#" class="w3-bar-item w3-button">Contact</a>
-        <a href="#" class="w3-bar-item w3-button">Hours</a>
-        <a href="#" class="w3-bar-item w3-button">Menu</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
-      </div>
+ 
 
 <!--row for quick link boxes (menu, dine, learn)-->
    <div class="w3-row w3-display-bottomleft">
@@ -43,15 +48,18 @@
     <heading class= " w3-container w3-text-white ">
       <h1 class ="w3-jumbo w3-margin">Haukai Restaurant</h1>
     </heading>
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
+    
+    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
       <p>Make your booking to</p>
       <h2>Dine</h2> 
     </div>
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
+
+    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
       <h2>Learn</h2> 
-      <p>about our food, cultureand recipes</p>
+      <p>about our food, culture and recipes</p>
     </div>
-    <div class="w3-quarter w3-container w3-margin w3-green w3-round w3-cell">
+
+    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
       <p>Check what's on the</p>
       <h2>Menu</h2> 
     </div>
