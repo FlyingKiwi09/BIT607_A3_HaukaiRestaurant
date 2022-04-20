@@ -150,9 +150,12 @@ h1 {
       display: block;
     }
 
-    /*display links vertically instead of horizontally*/
+    /*display links vertically instead of horizontally, set their min width and display on the right*/
     .topnav.responsive {
-        position: relative;
+        position: absolute;
+        min-width: 200px;
+        right: 10px;
+        background-color: rgba(51, 51, 51, 0.95);
     }
 
     .topnav.responsive a.icon {
