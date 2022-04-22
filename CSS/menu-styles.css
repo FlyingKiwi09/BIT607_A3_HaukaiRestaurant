@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    border: 1px solid red;
+    padding: 15px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding:1.5em 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    float: none;
+  }
+
+.menu-item {
+    padding: 15px;
+    border: 1px solid red;
+    
+}
+
+h4, .price{
+    display: inline;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+}
+
+figure img {
+    display: block;
+  }
+
+figcaption {
+    position: absolute;
+    bottom:0;
+    left: 0;
+   right: 0;
+   padding: 5rem 1rem 1rem;
+}
+
+
+@media only screen and (min-width: 480px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+  
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+   
+}
+

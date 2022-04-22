@@ -1,0 +1,45 @@
+
+ 
+  .column-contact {
+    width: 100%;
+}
+
+.row-contact {
+    text-align: center;
+}
+
+
+
+
+  /* Responsive layout for screens bigger than 600px */
+@media (min-width: 600px) {
+    
+}
+
+  /* Responsive layout for screens bigger than 1024px */
+  @media (min-width: 1024px) {
+    .column-contact-left {
+        float: left;
+        width: 70%;
+        padding: 10px;
+      }
+      .column-contact-right {
+        float: left;
+        width: 30%;
+        padding: 10px;
+      }
+    
+    
+      .row-contact:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      #contact-form {
+        width:300;
+        height:1203;
+       
+      }
+}
+
