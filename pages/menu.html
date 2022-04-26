@@ -20,128 +20,436 @@
     </div>
 
     <h1>Menu</h1>
-    <p>If you’re using it in a blog post or on your website, put the name of the creator and a link to their website or the source of the image beneath it. The format should be something like this: “Photo by [artist name with their website hyperlinked]” or “Image by [artist name] via [website hyperlinked].”</p>
+   
 
     <div id ="menu">
-        <h3 class="col-12">Starters</h3>
+        <h3 class="row-heading">Starters</h3>
         <section class ="row starters"> 
             
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/soup-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/soup-100.jpg" media="(min-width:480px">  
+                        <img src="../images/mobile/soup-80.jpg" alt="soup">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <div class="description">
-                    
-                    <h4>Pipi Soup</h4>
-                    <p class="price">...$15</p>
-                    <p>Our world famous pipi soup. Sourced daily from the waters of ... harbour.</p>
-                    
-                </div>
-                
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Pipi Soup</span>
+                        <span class="menu-item-price">$15</span>
+                    </h4>
+                    <p>Our world famous pipi soup. Sourced daily from the waters of ... harbour.</p>    
+                </div>  
+            </div>
+
+
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/salad-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/salad-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/salad-80.jpg" alt="salad">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Salad</span>
+                        <span class="menu-item-price">$10</span>
+                    </h4>
+                    <p>Fresh garden salad served with our house puha dressing.</p>    
+                </div>  
+            </div>
+
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/mussels-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/mussels-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/mussels-80.jpg" alt="mussels">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Mussels</span>
+                        <span class="menu-item-price">$15</span>
+                    </h4>
+                    <p>Mussels with creamy garlic suace.</p>    
+                </div>  
             </div>
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/mushroom-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/mushroom-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/mushroom-80.jpg" alt="mushroom">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
-            </div>
-            <div class ="menu-item">
-                <figure>
-                    <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
-                    </picture>
-                    <figcaption>Soup</figcaption>
-                </figure>
-                <p class="price">$15</p>
-            </div>
-            <div class ="menu-item">
-                <figure>
-                    <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
-                    </picture>
-                    <figcaption>Soup</figcaption>
-                </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Mushroom Stack</span>
+                        <span class="menu-item-price">$12</span>
+                    </h4>
+                    <p>Slow rosted kumara bites on a portobello mushroom stack.</p>    
+                </div>  
             </div>
         </section>
 
-        <h3>Mains</h3>
+        <h3 class="row-heading">Mains</h3> 
         <section class ="row mains"> 
             
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/burger-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/burger-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/burger-80.jpg" alt="burger">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Big Beef Burger</span>
+                        <span class="menu-item-price">$25</span>
+                    </h4>
+                    <p>Angus beef patty served the kiwi way with egg colslaw and a side of kumara fries.</p>    
+                </div>  
+            </div>
+
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/curry-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/curry-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/curry-80.jpg" alt="Curry">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Curry</span>
+                        <span class="menu-item-price">$28</span>
+                    </h4>
+                    <p>Green curry with sesonal vegetables and your choice of meat or tofu.</p>    
+                </div>  
             </div>
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/FishAndChips-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/FishAndChips-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/FishAndChips-80.jpg" alt="Fish and Chips">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Fish & Chips</span>
+                        <span class="menu-item-price">$28</span>
+                    </h4>
+                    <p>The kiwi classic, the catch of the day served with fries and colslaw.</p>    
+                </div>  
             </div>
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/pork-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/pork-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/pork-80.jpg" alt="pork">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Pork</span>
+                        <span class="menu-item-price">$32</span>
+                    </h4>
+                    <p>Slow roasted pork. Served with our special dressing, salad and fries.</p>    
+                </div>  
             </div>
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/SurfNTurf-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/SurfNTurf-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/SurfNTurf-80.jpg" alt="Surf and Turf">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Surf N Turf</span>
+                        <span class="menu-item-price">$35</span>
+                    </h4>
+                    <p>500g Angus beef steak with chilli prawns. Served with a side of fries and salad.</p>    
+                </div>  
             </div>
             <div class ="menu-item">
-                <figure>
+                <figure class ="menu-item-image">
                     <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
+                        <source srcset="../images/large/sushi-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/sushi-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/sushi-80.jpg" alt="sushi">
                     </picture>
-                    <figcaption>Soup</figcaption>
+                    <figcaption>Photo Credit</figcaption>
                 </figure>
-                <p class="price">$15</p>
-            </div>
-            <div class ="menu-item">
-                <figure>
-                    <picture>
-                        <source srcset=" " type="" media=""> 
-                        <img src="../images/soup-200px.jpg" alt="soup">
-                    </picture>
-                    <figcaption>Soup</figcaption>
-                </figure>
-                <p class="price">$15</p>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Sushi</span>
+                        <span class="menu-item-price">$25</span>
+                    </h4>
+                    <p>Sushi plater with a variety of pieces. Made fresh daily.</p>    
+                </div>  
             </div>
         </section>
-        <h3>Deserts</h3>
-        <h3>Drinks</h3>
+
+        <h3 class="row-heading">Deserts</h3>
+        <section class ="row deserts"> 
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/brownie-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/brownie-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/brownie-80.jpg" alt="brownie">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Brownie</span>
+                        <span class="menu-item-price">$12</span>
+                    </h4>
+                    <p>Dark chocolate brownie with a selection of seasonal fruits.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/cheesecake-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/cheesecake-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/cheesecake-80.jpg" alt="cheesecake">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Cheesecake</span>
+                        <span class="menu-item-price">$10</span>
+                    </h4>
+                    <p>Cheesecake of the day. Check the specials menu or ask us about today's flavour.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/chocolatePud-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/chocolatePud-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/chocolatePud-80.jpg" alt="Self-saucing Chocolate Pudding">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Self-Saucing Chocolate Pudding</span>
+                        <span class="menu-item-price">$12</span>
+                    </h4>
+                    <p>New Zealand's own chocolate delecacy. With your choice of ice-cream.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/pavlova-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/pavlova-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/pavlova-80.jpg" alt="pavlova">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Pavlova</span>
+                        <span class="menu-item-price">$10</span>
+                    </h4>
+                    <p>Crispy on the outside and a melt in your mouth middle. With fruit and cream.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/sponge-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/sponge-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/sponge-80.jpg" alt="Sponge and Mouse">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">Sponge and Mouse</span>
+                        <span class="menu-item-price">$15</span>
+                    </h4>
+                    <p>Green mouse slice and a light and fluffy sponge.</p>    
+                </div>  
+            </div>
+        </section>
+
+        <h3 class="row-heading">Drinks</h3>
+        <section class ="row drinks"> 
+            
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/beer-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/beer-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/beer-80.jpg" alt="beer">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Amber One</span>
+                        <span class="menu-item-price">$11</span>
+                    </h4>
+                    <p>Beer from the beer company.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/whiteWine-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/whiteWine-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/whiteWine-80.jpg" alt="white wine">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The White One</span>
+                        <span class="menu-item-price">$13</span>
+                    </h4>
+                    <p>White wine from the white wine company.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/redWine-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/redWine-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/redWine-80.jpg" alt="red wine">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Red One</span>
+                        <span class="menu-item-price">$14</span>
+                    </h4>
+                    <p>Red wine from the red wine company.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/blue-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/blue-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/blue-80.jpg" alt="blue drink">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Blue One</span>
+                        <span class="menu-item-price">$12</span>
+                    </h4>
+                    <p>Our blue cocktail. Blueberries with a tropical twist.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/green-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/green-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/green-80.jpg" alt="green drink">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Green One</span>
+                        <span class="menu-item-price">$12</span>
+                    </h4>
+                    <p>Our green smoothie. Spinnach, cucumber and all things green.</p>    
+                </div>  
+            </div>
+
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/orange-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/orange-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/orange-80.jpg" alt="orange drink">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Orange One</span>
+                        <span class="menu-item-price">$17</span>
+                    </h4>
+                    <p>Freshly squeezed orange juice.</p>    
+                </div>  
+            </div>
+
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/coffee-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/coffee-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/coffee-80.jpg" alt="coffee">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Golden One</span>
+                        <span class="menu-item-price">$6</span>
+                    </h4>
+                    <p>Golden roasted Cuban Coffee.</p>    
+                </div>  
+            </div>
+            <div class ="menu-item">
+                <figure class ="menu-item-image">
+                    <picture>
+                        <source srcset="../images/large/tea-125.jpg" media="(min-width:768px"> 
+                        <source srcset="../images/medium/tea-100.jpg" media="(min-width:480px"> 
+                        <img src="../images/mobile/tea-80.jpg" alt="teak">
+                    </picture>
+                    <figcaption>Photo Credit</figcaption>
+                </figure>
+                <div class="menu-item-text">
+                    <h4 class="menu-item-heading">
+                        <span class="menu-item-name">The Floral One</span>
+                        <span class="menu-item-price">$7</span>
+                    </h4>
+                    <p>Floral blend of New Zealand tea.</p>    
+                </div>  
+            </div>
+        </section>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") { 
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+        }
+      }
+    </script>
 
 </body>
 </html>
