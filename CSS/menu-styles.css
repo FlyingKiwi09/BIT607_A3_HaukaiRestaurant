@@ -44,6 +44,7 @@ text-align: center;
 
 }
 
+/*center content in the middle of the page no bigger than 1280px*/
   body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1280px;
@@ -56,6 +57,8 @@ text-align: center;
     font-size: calc(30px + 0.25vw);
   }
   
+  /*grid display for menu sections (i.e. starters, mains, desserts, drinks) default set to 1fr for mobile screens
+  boarder at the bottom to separate each section of the menu*/
   .row {
     display: grid;
     grid-template-columns: 1fr; 
@@ -67,12 +70,14 @@ text-align: center;
     
   }
 
+/*headings for each section of the menu margin to separate heading from the previous section but not the related one below*/
   .row-heading {
     margin: 1.5em;
     margin-bottom: 0;
     font-size: calc(16px + 0.25vw);
   }
 
+  /*boarder and shading around each menu item and flex so that each part of the item (image and text) are next to each other and not under*/
 .menu-item {
     display: flex;
     padding: 10px;
@@ -91,7 +96,7 @@ figcaption {
 } 
 
 
-
+/*flex and justify-content so that items in the headings (name and price are on the left and right.*/
 .menu-item-heading {
   margin: 0;
   display: flex;
@@ -113,64 +118,58 @@ figcaption {
 
 
 
-
+/* Responsive layout for screens <600px */
 @media only screen and (min-width: 600px) {
   
-  .row {
+  /*change menu to 2 column grid*/
+.row {
     grid-template-columns: repeat(2, 1fr);
 }
 
+ /* hide links from topnav execpt for the first one (home). */
+ .topnav a:not(:first-child) {
+  display: none;
+}
 
+/*Disply icon link for dropdown topnav*/
+.topnav a.icon {
+float: right;
+display: block;
+}
+
+/*display links vertically instead of horizontally, set their min width and display on the right*/
+.topnav.responsive {
+  position: absolute;
+  min-width: 200px;
+  right: 10px;
+  background-color: rgba(51, 51, 51, 0.95);
+}
+
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 
 }
 
 @media only screen and (min-width: 768px) {
     
-  
+  /*Note: images change for large (125px as this screen size) */
  
   
 
 }
 
+/* Responsive layout for screens <1080px */
 @media only screen and (min-width: 1080px) {
-  .row {
+ /*change menu to 3 column grid*/ 
+.row {
     grid-template-columns: repeat(3, 1fr);
 }
-}
-
-
-
-/* Responsive layout for screens <600px */
-@media (max-width: 600px) {
-
-  /* hide links from topnav execpt for the first one (home). */
-  .topnav a:not(:first-child) {
-      display: none;
-  }
-
-  /*Disply icon link for dropdown topnav*/
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  /*display links vertically instead of horizontally, set their min width and display on the right*/
-  .topnav.responsive {
-      position: absolute;
-      min-width: 200px;
-      right: 10px;
-      background-color: rgba(51, 51, 51, 0.95);
-  }
-
-  .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-  .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-  }
-
 }
