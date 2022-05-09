@@ -1,110 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <!-- W3C style sheet for grid -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-    <link rel="stylesheet" href="CSS/styles.css"/>
-    
-    <title>Haukai Restaurant</title>
-</head>
-<body style = "max-width:1200px; margin-left: auto; margin-right:auto">
-  
-     <!--Navigation bar-->
-    <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
-    <div class="w3-bar  w3-light-grey ">
-      <a href="#" class="w3-bar-item w3-button">Home</a>
-      <a href="pages/contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-      <a href="pages/hours.html" class="w3-bar-item w3-button w3-hide-small">Hours</a>
-      <a href="pages/menu.html" class="w3-bar-item w3-button w3-hide-small">Menu</a>
-      <a href="pages/reservations.html" class="w3-bar-item w3-button w3-hide-small">Reservation</a>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-  </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--drop down Navigation bar for small screens-->
-  <div id="dropNav" class="w3-bar-block  w3-light-grey w3-hide w3-hide-large w3-hide-medium">
-      <a href="pages/contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="pages/hours.html" class="w3-bar-item w3-button">Hours</a>
-      <a href="pages/menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="pages/reservations.html" class="w3-bar-item w3-button">Reservation</a>
-  </div>
-    
-  
-  <div class="w3-display-container" >
-    <!--background image-->
-    <picture>
-      <source media="(max-width: 599px)" srcset="images/restaurantBackgroundMobile.jpg" alt="Restaurant Background" style="width:100%">
-     
-      <img src="images/restaurantBackground.jpg" alt="Restaurant Background" style="width:100%;min-height:200px;">
-    </picture>
-   
+    <!-- Style sheets-->
+    <link rel="stylesheet" href="CSS/site-styles.css" />
+    <link rel="stylesheet" href="CSS/index-styles.css" />
+    <link rel="stylesheet" href="CSS/nav-styles.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
- 
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
+    <header class="header">
+      <a class="logo" href="index.html">HR</a>
+      <!-- input checkbox to display side menu (when checked) or not (when unchecked)
+      & label containing span which will be styled as a hamburger to turn side menu on/off-->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/hours.html">Hours</a></li>
+          <li><a href="pages/menu.html">Menu</a></li>
+          <li><a href="pages/reservations.html">Reservations</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!--row for quick link boxes (menu, dine, learn)-->
-   <div class="w3-row w3-display-bottomleft">
-<!-- heading is here so it sits on top of quick link boxes-->
-    <heading class= " w3-container w3-text-white ">
-      <h1 class ="w3-jumbo w3-margin">Haukai Restaurant</h1>
-    </heading>
-    
-    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
-      <p>Make your booking to</p>
-      <h2>Dine</h2> 
-    </div>
+    <!--grid for quick link boxes-->
+    <div class="grid-container">
+      <div class="banner">
+        <h1>Huakai Restuarant</h1>
 
-    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
-      <h2>Learn</h2> 
-      <p>about our food, culture and recipes</p>
-    </div>
-
-    <div class="w3-col s12 m3 w3-container w3-margin w3-green w3-round w3-cell" style="max-width: 80%;">
-      <p>Check what's on the</p>
-      <h2>Menu</h2> 
-    </div>
-  </div>
-</div>
-
-
-
-  <!--row for quick info bar (hours, contact, map)-->
-  <div class="w3-row w3-grey">
-    <div class="w3-col s12 m3 l4 w3-container w3-center">
-      <h3>Opening Hours:</h3>
-      <p>Wed, Thurs, Fri, Sat, Sun</p>
-      <p>5pm - late</p> 
-      <br>
-      <p>Bookings Recommended</p>
-    </div>
-    <div class="w3-col s12 m3 l4 w3-container w3-center">
-      <h3>Contact:</h3> 
-      <p>000 948 7822</p>
-      <p>restaurant@email.com</p>
-      <h3>Address:</h3> 
-      <p>14 restaurant street</p>
-      <p>City</p>
-    </div>
-    <div class="w3-col s12 m6 l4 w3-container w3-center w3-padding">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz" width="300"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--grid for quick link boxes-->
+        <div class="row">
+          <div class="box">
+            <a href="pages/reservations.html">
+              <p>Make your booking to</p>
+              <h2>Dine</h2>
+            </a>
+          </div>
+          <div class="box">
+            <a href="#">
+              <h2>Learn</h2>
+              <p>about our food, culture and recipes</p>
+            </a>
+          </div>
+          <div class="box">
+            <a href="pages/menu.html">
+              <p>Check what's on the</p>
+              <h2>Menu</h2>
+            </a>
+          </div>
+        </div>
       </div>
-  </div>
 
-  <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_navbar_hide -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("dropNav");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
+      <div class="left info">
+        <h3 class="info-heading">Opening Hours:</h3>
+        <p>Wed, Thurs, Fri, Sat, Sun</p>
+        <p>5pm - late</p>
+        <br />
 
+        <div class="info-heading button">
+          <a href="pages/reservations.html"><h3>Bookings Recommended</h3></a>
+        </div>
+        <br />
+      </div>
 
-</body>
-<footer class="w3-container w3-black w3-center">
-<p>footer info</p>
-</footer>
+      <div class="middle info">
+        <h3 class="info-heading">Contact:</h3>
+        <p>000 948 7822</p>
+        <p>restaurant@email.com</p>
+        <br />
+        <h3 class="info-heading">Address:</h3>
+        <p>14 restaurant street</p>
+        <p>City</p>
+        <br />
+      </div>
+
+      <div class="right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz"
+          width="100%"
+          height="300px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <footer class="footer">
+        <p>Footer</p>
+        <a href="pages/privacy.html"><p>privacy policy</p></a>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -2,22 +2,34 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href="../CSS/site-styles.css"/>
+    <link rel="stylesheet" href="../CSS/nav-styles.css"/>
     <link rel="stylesheet" href="../CSS/menu-styles.css"/>
+    
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="../take4.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="hours.html">Hours</a>
-        <a href="menu.html">Menu</a>
-        <a href="reservations.html">Reservations</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-    </div>
+
+
+   <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
+   <header class="header"> 
+    <a class="logo" href="../index.html">HR</a>
+    <!-- input checkbox to display side menu (when checked) or not (when unchecked)
+    & label containing span which will be styled as a hamburger to turn side menu on/off-->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="hours.html">Hours</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+  
 
 <!--menu heading-->
     <h1>Menu</h1>
@@ -26,7 +38,7 @@
 - menu is split into rows for each section i.e. starters, mains, desserts, drinks
 - each section is made up of menu-items
 - menu items have two parts: "menu-item-image" and "menu-item-text"
-- images have 3 different sources for responsive design: large = 125px, medium = 100px, mobile = 8-px. Mobile is set to defualt.
+- images have 3 different sources for responsive design: large = 125px, medium = 100px, mobile = 80px. Mobile is set to defualt.
 - photo credits are contained in figcations
 - menu-item-text includes: name, price and a description -->
 
@@ -464,16 +476,11 @@
         </section>
     </div>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") { 
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-        }
-      }
-    </script>
+    <footer class="footer">
+        <p>Footer</p>
+        <a href="privacy.html"><p>privacy policy</p></a>
+      </footer>
+    
 
 </body>
 </html>

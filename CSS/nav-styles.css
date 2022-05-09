@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Style body including
+- set font for page
+- max width and center (for large screens)*/
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  float: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*Style header including
+- bar across top of screen
+- box-shaddow and sticky to separate from the rest of the content as we scroll*/
+.header {
+  background-color: black;
+  box-shadow: 1px 1px 5px 0px gray;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+/*style logo*/
+.logo {
+  display: inline-block;
+  color: white;
+  font-size: clamp(16px, 4vw, 20px);
+  margin-left: 1vw;
+}
+
+/*style nav
+  - width: only covers 50% of the screen when it drops down
+  - right: sticks to the right side of the screen
+  - transition for when hamb is clicked
+  - max-height set to 0 to hide it until clicked*/
+.nav {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+  right: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+/*nav links
+  - block so they stack on top of each other*/
+.nav-menu a {
+  display: block;
+  color: white;
+  padding: 15px 30px;
+}
+
+.nav-menu a:hover {
+  background-color: gray;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 2vw;
+}
+
+/*creates the middle hamburger line*/
+.hamb-line {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+/*creates the top and bottom hamburger line*/
+.hamb-line::before,
+.hamb-line::after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+/*offests the top and bottom hanburger line from the middle line*/
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+
+/*hides checkbox from page*/
+.side-menu {
+  display: none;
+}
+
+/* when the hamburger (side-menu) is clicked 
+- show nav
+- transform hamb into a cross*/
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/*formating for screens larger than 600px main changes include
+- reformating of nav bar across top of screen
+*/
+@media (min-width: 600px) {
+  /*display nav links across top of page*/
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
+  }
+
+  .nav-menu li {
+    float: left;
+  }
+
+  .nav-menu a {
+    padding: 0;
+    padding-right: 4vw;
+  }
+
+  .nav-menu a:hover {
+    background-color: transparent;
+    color: grey;
+  }
+
+  /*don't display hamburger*/
+  .hamb {
+    display: none;
+  }
+}
