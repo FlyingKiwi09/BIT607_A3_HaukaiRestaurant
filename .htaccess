@@ -1,4 +1,4 @@
 AuthName "Password Protected Area"
-AuthUserFile https://flyingkiwi09.github.io/BIT607_A3_HaukaiRestaurant/.htpasswd
+AuthUserFile .htpasswd
 AuthType Basic
 Require valid-user
