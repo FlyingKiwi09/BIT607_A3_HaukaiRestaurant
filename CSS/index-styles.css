@@ -1,56 +1,25 @@
-
-
-
-/* Style the banner including
-- heading
-- image
-- quicklink boxes*/
-.banner {
-  grid-area: header;
-  background-color: #f1f1f1;
-  text-align: center;
-  background-image: url("../images/mobile/restaurant1-mobile.jpg");
-  background-position: center bottom;
+/* background image for main content (mobile display) image is changed for larger screens below*/
+main {
+  background-image: url("../images/mobile/table-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 /*main heading style*/
 h1 {
   margin-top: 2vw;
-  font-size: calc(55px + 0.6vw);
+  font-size: calc(40px + 1vw);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
-  padding: 1vw;
+  padding: 3vw;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 1px 5px 0px gray;
+  text-shadow: 1px 1px 2px rgba(104, 165, 107, 1);
+  border-radius: 4px;
 }
 
-/* The grid container */
-.grid-container {
-  display: grid;
-
-  grid-template-areas:
-    "header header header header header header"
-    "left left left left left left"
-    "middle middle middle middle middle middle"
-    "right right right right right right"
-    "footer footer footer footer footer footer";
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
+/*grid display for quick link boxes
+- set to one column for mobile with change to 3 columns for larger screens below*/
 .row {
   display: grid;
   min-height: 400px;
@@ -62,6 +31,7 @@ h1 {
   justify-items: stretch;
 }
 
+/*quick link boxes*/
 .box {
   background-color: rgba(104, 165, 107, 0.8);
   text-align: center;
@@ -70,111 +40,52 @@ h1 {
   border-radius: 10px;
 }
 
+/*boxes enlarge and become solid on hover*/
 .box:hover {
   background-color: rgba(104, 165, 107, 1);
   transform: scale(1.05);
 }
 
+/*headings in quick link boxes*/
 .box h2 {
-  font-size: calc(55px + 0.2vw);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(40px + 0.2vw);
   margin: 0;
 }
 
+/*text in quick link boxes*/
 .box p {
   font-size: calc(16px + 0.5vw);
   margin: 0;
 }
 
+/*remove default styling of links for quick link boxes*/
 .row a {
   text-decoration: none;
   color: black;
 }
 
-.left,
-.middle,
-.right {
-  height: auto;
-  text-align: center;
-  background-color: lightgray;
-}
-
-/*styles for info e.g. opening hourse, contact and address*/
-
-.info-heading {
-  margin: 3vw 0 1vw 0;
-}
-
-.info a {
-  font-style: normal;
-  color: black;
-}
-
-.button {
-  
-  background-color: rgba(104, 165, 107, 1);
-  width: fit-content;
-  display: inline-block;
-  padding: 1vw;
-  border-radius: 1vw;
-  box-shadow: 1px 1px 5px 0px gray;
-}
-
-.button:hover {
-  transform: scale(1.05);
-}
-
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
-}
-
-
-/*formating for screens larger than 600px main changes include
-- reformating of nav bar across top of screen
+/*formating for screens larger than 600px 
+- quick link boxes display horizontaly
+- background image changes to larger version
 */
 @media (min-width: 600px) {
- 
-
   .row {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 40px;
   }
 
-  .left,
-  .middle,
-  .right {
-    padding: 10px;
-  }
-
- 
-
-  /*Change layout of grid contents*/
-  .grid-container {
-    grid-template-areas:
-      "header header header header header header"
-      "left left left middle middle middle"
-      "right right right right right right"
-      "footer footer footer footer footer footer";
-  }
-
-  .banner {
-    background-image: url("../images/medium/restaurant1-medium.jpg");
+  main {
+    background-image: url("../images/table.jpg");
   }
 }
 
+/*formating for screens larger than 600px 
+- heading changes to larger font size
+*/
 @media (min-width: 1024px) {
-  .grid-container {
-    grid-template-areas:
-      "header header header header header header"
-      "left left middle middle right right"
-      "footer footer footer footer footer footer";
-  }
-
-  .banner {
-    background-image: url("../images/large/restaurant1-large.jpg");
+  h1 {
+    font-size: calc(55px + 1vw);
   }
 }

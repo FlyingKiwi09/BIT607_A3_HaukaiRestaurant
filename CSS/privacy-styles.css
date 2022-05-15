@@ -1,36 +1,36 @@
+/* Haukai Restuarant privacy page styles*/
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 main {
-    margin: 2vw 5vw;
-    line-height: 1.6;
+  margin: 2vw 5vw;
+  line-height: 1.6;
 }
 
 h1 {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 h2 {
-    margin: 1vw 0 .5vw 0;
-    font-size: medium;
+  margin: 1vw 0 0.5vw 0;
+  font-size: medium;
 }
 
-p, ul {
-    font-size: small;
+p,
+.privacy-list {
+  font-size: small;
 }
 
-ul {
-    list-style:square;
+.privacy-list {
+  list-style: square;
 }
 
-li {
-    margin: 0 14px;
+.privacy-list li {
+  margin: 0 14px;
 }
 
 p {
-    margin: .75vw 0 .25vw 0;
+  margin: 0.75vw 0 0.25vw 0;
 }
-
-

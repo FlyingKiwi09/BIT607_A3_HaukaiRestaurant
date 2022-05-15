@@ -2,24 +2,11 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Huakai Restaurant Home</title>
     <!-- Style sheets-->
     <link rel="stylesheet" href="CSS/site-styles.css" />
     <link rel="stylesheet" href="CSS/index-styles.css" />
     <link rel="stylesheet" href="CSS/nav-styles.css" />
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
@@ -38,77 +25,40 @@
           <li><a href="pages/hours.html">Hours</a></li>
           <li><a href="pages/menu.html">Menu</a></li>
           <li><a href="pages/reservations.html">Reservations</a></li>
+          <li class="staff"><a href="pages/staff.html">Staff</a></li>
         </ul>
       </nav>
     </header>
 
-    <!--grid for quick link boxes-->
-    <div class="grid-container">
-      <div class="banner">
-        <h1>Huakai Restuarant</h1>
+    <main>
+      <h1>Huakai Restuarant</h1>
 
-        <!--grid for quick link boxes-->
-        <div class="row">
-          <div class="box">
-            <a href="pages/reservations.html">
-              <p>Make your booking to</p>
-              <h2>Dine</h2>
-            </a>
-          </div>
-          <div class="box">
-            <a href="#">
-              <h2>Learn</h2>
-              <p>about our food, culture and recipes</p>
-            </a>
-          </div>
-          <div class="box">
-            <a href="pages/menu.html">
-              <p>Check what's on the</p>
-              <h2>Menu</h2>
-            </a>
-          </div>
+      <!--grid for quick link boxes with 3x boxes each with a key word and text-->
+      <div class="row">
+        <div class="box">
+          <a href="pages/reservations.html">
+            <p>Make your booking to</p>
+            <h2>Dine</h2>
+          </a>
+        </div>
+        <div class="box">
+          <a href="#">
+            <h2>Learn</h2>
+            <p>about our food, culture and recipes</p>
+          </a>
+        </div>
+        <div class="box">
+          <a href="pages/menu.html">
+            <p>Check what's on the</p>
+            <h2>Menu</h2>
+          </a>
         </div>
       </div>
+    </main>
 
-      <div class="left info">
-        <h3 class="info-heading">Opening Hours:</h3>
-        <p>Wed, Thurs, Fri, Sat, Sun</p>
-        <p>5pm - late</p>
-        <br />
-
-        <div class="info-heading button">
-          <a href="pages/reservations.html"><h3>Bookings Recommended</h3></a>
-        </div>
-        <br />
-      </div>
-
-      <div class="middle info">
-        <h3 class="info-heading">Contact:</h3>
-        <p>000 948 7822</p>
-        <p>restaurant@email.com</p>
-        <br />
-        <h3 class="info-heading">Address:</h3>
-        <p>14 restaurant street</p>
-        <p>City</p>
-        <br />
-      </div>
-
-      <div class="right">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz"
-          width="100%"
-          height="300px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-      <footer class="footer">
-        <p>Footer</p>
-        <a href="pages/privacy.html"><p>privacy policy</p></a>
-      </footer>
-    </div>
+    <footer class="footer">
+      <p>Footer</p>
+      <a href="pages/privacy.html"><p>privacy policy</p></a>
+    </footer>
   </body>
 </html>

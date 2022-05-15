@@ -1,45 +1,62 @@
+/*Huakai Restaurant contact page styles*/
 
- 
-  .column-contact {
-    width: 100%;
-}
-
+/* set up grid 
+- default 1 column for mobile, changed to 2 columns for larger screens below */
 .row-contact {
-    text-align: center;
+  display: grid;
+  height: auto;
+  align-content: end;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+  justify-items: stretch;
 }
 
+.column-contact-right,
+.column-contact-left {
+  text-align: center;
+  min-height: 0;
+  padding: 0.5vw;
+}
 
+address {
+  padding: 10px;
+  background-color: rgba(104, 165, 107, 0.8);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px lightgray;
+}
 
+iframe {
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px lightgray;
+}
 
-  /* Responsive layout for screens bigger than 600px */
+h2 {
+  margin: 2vw 0 0.5vw 0;
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+  margin: 0.75vw 0 0.25vw 0;
+}
+
+h2,
+p {
+  display: inline;
+  vertical-align: middle;
+}
+
+.line {
+  line-height: 1.6;
+}
+
+/* Responsive layout for screens bigger than 600px
+- display as grid with two columns, 1/3 and 2/3s*/
 @media (min-width: 600px) {
-    
+  .row-contact {
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+  }
 }
-
-  /* Responsive layout for screens bigger than 1024px */
-  @media (min-width: 1024px) {
-    .column-contact-left {
-        float: left;
-        width: 70%;
-        padding: 10px;
-      }
-      .column-contact-right {
-        float: left;
-        width: 30%;
-        padding: 10px;
-      }
-    
-    
-      .row-contact:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-    
-      #contact-form {
-        width:300;
-        height:1203;
-       
-      }
-}
-

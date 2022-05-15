@@ -1,486 +1,775 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/site-styles.css"/>
-    <link rel="stylesheet" href="../CSS/nav-styles.css"/>
-    <link rel="stylesheet" href="../CSS/menu-styles.css"/>
-    
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
-
-   <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
-   <header class="header"> 
-    <a class="logo" href="../index.html">HR</a>
-    <!-- input checkbox to display side menu (when checked) or not (when unchecked)
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huakai Restaurant Menu</title>
+    <link rel="stylesheet" href="../CSS/site-styles.css" />
+    <link rel="stylesheet" href="../CSS/nav-styles.css" />
+    <link rel="stylesheet" href="../CSS/menu-styles.css" />
+  </head>
+  <body>
+    <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
+    <header class="header">
+      <a class="logo" href="../index.html">HR</a>
+      <!-- input checkbox to display side menu (when checked) or not (when unchecked)
     & label containing span which will be styled as a hamburger to turn side menu on/off-->
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="hours.html">Hours</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li class="staff"><a href="staff.html">Staff</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!--menu heading-->
-    <h1>Menu</h1>
-   
-<!--menu section: 
+    <main>
+      <!--menu heading-->
+      <h1>Menu</h1>
+
+      <!--menu section: 
 - menu is split into rows for each section i.e. starters, mains, desserts, drinks
-- each section is made up of menu-items
+- each row/section is made up of menu-items
 - menu items have two parts: "menu-item-image" and "menu-item-text"
 - images have 3 different sources for responsive design: large = 125px, medium = 100px, mobile = 80px. Mobile is set to defualt.
-- photo credits are contained in figcations
+- photo credits are contained in figcations, photos without credits are open sorce
 - menu-item-text includes: name, price and a description -->
 
-    <div id ="menu">
+      <div id="menu">
         <!-- starters section-->
         <h3 class="row-heading">Starters</h3>
-        <section class ="row starters"> 
-
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/soup-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/soup-100.jpg" media="(min-width:480px">  
-                        <img src="../images/mobile/soup-80.jpg" alt="soup">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Pipi Soup</span>
-                        <span class="menu-item-price">$15</span>
-                    </h4>
-                    <p>Our world famous pipi soup. Sourced daily from the waters of ... harbour.</p>    
-                </div>  
+        <section class="row starters">
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/soup-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/soup-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/soup-80-min.jpg" alt="soup" />
+              </picture>
+              <figcaption>
+                Pipi Soup by
+                <a href="https://www.flickr.com/photos/stratman2/51944684200/">
+                  Stratman²
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Pipi Soup</span>
+                <span class="menu-item-price">$15</span>
+              </h4>
+              <p>
+                Our world famous pipi soup. Sourced daily from the waters of ...
+                harbour.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/salad-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/salad-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/salad-80.jpg" alt="salad">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Salad</span>
-                        <span class="menu-item-price">$10</span>
-                    </h4>
-                    <p>Fresh garden salad served with our house puha dressing.</p>    
-                </div>  
-            </div>
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/salad-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/salad-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/salad-80-min.jpg" alt="salad" />
+              </picture>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/mussels-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/mussels-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/mussels-80.jpg" alt="mussels">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Mussels</span>
-                        <span class="menu-item-price">$15</span>
-                    </h4>
-                    <p>Mussels with creamy garlic suace.</p>    
-                </div>  
+              <figcaption>
+                Salad by
+                <a
+                  href="https://flickr.com/photos/96228372@N06/26593947082/in/photolist-Gw1VX1-8LTGc4-6MLmQu-ri3V5T-N48LYJ-8jgFsp-pAzt8g-DjEASs-4mF1Mg-ZhViSC-9f3x4n-dD5aBg-65WXXU-9gsRRt-P2K1eU-n3SLC-D39Qh-2hH9rxL-9gvWf9-8imcaS-bydKeu-4PrrPP-5REPmw-846hDZ-cxGSmG-dCvrY7-7oBW36-mnZMQa-94EYCX-Eqycqg-4e2C76-4e2Ccn-4e2BZx-vAunF-gjirA-H558xf-8uLvNT-ugoUbv-5F6rY1-GH4btw-71GjjU-2mMS5D7-2me1MXz-2hH9rrP-2mUytwS-2mTMNex-d6WN2b-2miUMwn-2nb6Ye8-2iCwY3n"
+                >
+                  Heath Cajandig
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Salad</span>
+                <span class="menu-item-price">$10</span>
+              </h4>
+              <p>Fresh garden salad served with our house puha dressing.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/mushroom-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/mushroom-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/mushroom-80.jpg" alt="mushroom">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Mushroom Stack</span>
-                        <span class="menu-item-price">$12</span>
-                    </h4>
-                    <p>Slow rosted kumara bites on a portobello mushroom stack.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/mussels-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/mussels-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/mussels-80-min.jpg" alt="mussels" />
+              </picture>
+
+              <figcaption>
+                Mussels
+                <a
+                  href="https://www.flickr.com/photos/catspyjamasnz/4574164776/in/photolist-7H6tJ1-22T98Gy-9vwz2a-6gf3gZ-eZ89tx-95eZ4X-eYVyUA-7YcMPW-9pgu8Y-8VS9zY-qNNFGD-pt8uP1-pW5qih-qRD4zs-6381Xe-nu7Jcm-r25g1J-nu7K8Q-pUHtef-ntfAup-qfiA9Z-qRyjEg-qPqvas-qQMzw5-ntfFFB-e1sgVr-pWiio8-qLMDrL-nvj38H-r4hCm9-7SNdUk-8VS8Ns-qYreKi-ntfCde-nc3RB5-qK2gez-qk1qyT-qvKvbd-qYvsxA-qK3XKa-qN929k-r2jEkg-5rNkjv-SWPtmY-4ukzUW-Cto7Hu-5AcyS9-9pgu21-9pdr4r/"
+                  >catspyjamasnz
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Mussels</span>
+                <span class="menu-item-price">$15</span>
+              </h4>
+              <p>Mussels with creamy garlic suace.</p>
             </div>
+          </div>
+
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/mushroom-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/mushroom-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/mushroom-80-min.jpg" alt="mushroom" />
+              </picture>
+              <figcaption>
+                Mushroom Stack by
+                <a
+                  href="https://www.flickr.com/photos/morepork/5298848561/in/photolist-7H6tJ1-22T98Gy-9vwz2a-6gf3gZ-eZ89tx-95eZ4X-eYVyUA-7YcMPW-9pgu8Y-8VS9zY-qNNFGD-pt8uP1-pW5qih-qRD4zs-6381Xe-nu7Jcm-r25g1J-nu7K8Q-pUHtef-ntfAup-qfiA9Z-qRyjEg-qPqvas-qQMzw5-ntfFFB-e1sgVr-pWiio8-qLMDrL-nvj38H-r4hCm9-7SNdUk-8VS8Ns-qYreKi-ntfCde-nc3RB5-qK2gez-qk1qyT-qvKvbd-qYvsxA-qK3XKa-qN929k-r2jEkg-5rNkjv-SWPtmY-4ukzUW-Cto7Hu-5AcyS9-9pgu21-9pdr4r"
+                  >Wei-Hang Chua
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Mushroom Stack</span>
+                <span class="menu-item-price">$12</span>
+              </h4>
+              <p>Slow rosted kumara bites on a portobello mushroom stack.</p>
+            </div>
+          </div>
         </section>
 
         <!-- mains section-->
-        <h3 class="row-heading">Mains</h3> 
-        <section class ="row mains"> 
-            
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/burger-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/burger-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/burger-80.jpg" alt="burger">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Big Beef Burger</span>
-                        <span class="menu-item-price">$25</span>
-                    </h4>
-                    <p>Angus beef patty served the kiwi way with egg colslaw and a side of kumara fries.</p>    
-                </div>  
+        <h3 class="row-heading">Mains</h3>
+        <section class="row mains">
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/burger-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/burger-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/burger-80-min.jpg" alt="burger" />
+              </picture>
+              <figcaption>Big Beef Burger</figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Big Beef Burger</span>
+                <span class="menu-item-price">$25</span>
+              </h4>
+              <p>
+                Angus beef patty served the kiwi way with egg colslaw and a side
+                of kumara fries.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/curry-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/curry-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/curry-80.jpg" alt="Curry">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Curry</span>
-                        <span class="menu-item-price">$28</span>
-                    </h4>
-                    <p>Green curry with sesonal vegetables and your choice of meat or tofu.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/curry-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/curry-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/curry-80-min.jpg" alt="Curry" />
+              </picture>
+              <figcaption>
+                Curry by
+                <a
+                  href="https://www.flickr.com/photos/antaresy/16314301912/in/photolist-7H6tJ1-22T98Gy-9vwz2a-6gf3gZ-eZ89tx-95eZ4X-eYVyUA-7YcMPW-9pgu8Y-8VS9zY-qNNFGD-pt8uP1-pW5qih-qRD4zs-6381Xe-nu7Jcm-r25g1J-nu7K8Q-pUHtef-ntfAup-qfiA9Z-qRyjEg-qPqvas-qQMzw5-ntfFFB-e1sgVr-pWiio8-qLMDrL-nvj38H-r4hCm9-7SNdUk-8VS8Ns-qYreKi-ntfCde-nc3RB5-qK2gez-qk1qyT-qvKvbd-qYvsxA-qK3XKa-qN929k-r2jEkg-5rNkjv-SWPtmY-4ukzUW-Cto7Hu-5AcyS9-9pgu21-9pdr4r/"
+                  >Phyllis
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Curry</span>
+                <span class="menu-item-price">$28</span>
+              </h4>
+              <p>
+                Green curry with sesonal vegetables and your choice of meat or
+                tofu.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/FishAndChips-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/FishAndChips-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/FishAndChips-80.jpg" alt="Fish and Chips">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Fish & Chips</span>
-                        <span class="menu-item-price">$28</span>
-                    </h4>
-                    <p>The kiwi classic, the catch of the day served with fries and colslaw.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/FishAndChips-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/FishAndChips-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img
+                  src="../images/mobile/FishAndChips-80-min.jpg"
+                  alt="Fish and Chips"
+                />
+              </picture>
+              <figcaption>Fish & Chips</figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Fish & Chips</span>
+                <span class="menu-item-price">$28</span>
+              </h4>
+              <p>
+                The kiwi classic, the catch of the day served with fries and
+                colslaw.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/pork-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/pork-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/pork-80.jpg" alt="pork">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Pork</span>
-                        <span class="menu-item-price">$32</span>
-                    </h4>
-                    <p>Slow roasted pork. Served with our special dressing, salad and fries.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/pork-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/pork-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/pork-80-min.jpg" alt="pork" />
+              </picture>
+              <figcaption>Pork</figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Pork</span>
+                <span class="menu-item-price">$32</span>
+              </h4>
+              <p>
+                Slow roasted pork. Served with our special dressing, salad and
+                fries.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/SurfNTurf-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/SurfNTurf-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/SurfNTurf-80.jpg" alt="Surf and Turf">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Surf N Turf</span>
-                        <span class="menu-item-price">$35</span>
-                    </h4>
-                    <p>500g Angus beef steak with chilli prawns. Served with a side of fries and salad.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/SurfNTurf-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/SurfNTurf-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img
+                  src="../images/mobile/SurfNTurf-80-min.jpg"
+                  alt="Surf and Turf"
+                />
+              </picture>
+              <figcaption>
+                Surf N Turf by
+                <a
+                  href="https://www.flickr.com/photos/antaresy/16421066646/in/photolist-7H6tJ1-22T98Gy-9vwz2a-6gf3gZ-eZ89tx-95eZ4X-eYVyUA-7YcMPW-9pgu8Y-8VS9zY-qNNFGD-pt8uP1-pW5qih-qRD4zs-6381Xe-nu7Jcm-r25g1J-nu7K8Q-pUHtef-ntfAup-qfiA9Z-qRyjEg-qPqvas-qQMzw5-ntfFFB-e1sgVr-pWiio8-qLMDrL-nvj38H-r4hCm9-7SNdUk-8VS8Ns-qYreKi-ntfCde-nc3RB5-qK2gez-qk1qyT-qvKvbd-qYvsxA-qK3XKa-qN929k-r2jEkg-5rNkjv-SWPtmY-4ukzUW-Cto7Hu-5AcyS9-9pgu21-9pdr4r/"
+                  >Phyllis
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Surf N Turf</span>
+                <span class="menu-item-price">$35</span>
+              </h4>
+              <p>
+                500g Angus beef steak with chilli prawns. Served with a side of
+                fries and salad.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/sushi-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/sushi-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/sushi-80.jpg" alt="sushi">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Sushi</span>
-                        <span class="menu-item-price">$25</span>
-                    </h4>
-                    <p>Sushi plater with a variety of pieces. Made fresh daily.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/sushi-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/sushi-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/sushi-80-min.jpg" alt="sushi" />
+              </picture>
+              <figcaption>
+                Sushi by
+                <a
+                  href="https://www.flickr.com/photos/stratman2/34019790876/in/photolist-TQdjAy-541yEe-dVvGx8-28tm2Jv-bGktgc-5S5AXZ-osCWHV-S7eX9s-aPJSwk-6KqBLT-pECbkH-FnhQRe-7PCzcd-WYYS4n-4B7i6X-8cxcnE-6ACRZv-xsQ3ng-NDoHeB-fvLj2E-dxqsF2-DprBiK-5Mhppy-pHv7Tt-zjtJrv-4Zd149-23vwuv4-bxhzzX-DRA1hn-N1r1AP-SoLwss-4Stbsp-6bd4Wt-4HtU6u-9eypNr-4fnFyA-6nfoPb-aEgXks-eaWoy6-8kQcwB-9heq1G-QJ7s2f-7FjAxH-RQPScE-Dpry3X-2b1Ub9e-cq7vDN-qRWFue-aEgZ7A-7r3HFi"
+                  >Stratman²</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Sushi</span>
+                <span class="menu-item-price">$25</span>
+              </h4>
+              <p>Sushi plater with a variety of pieces. Made fresh daily.</p>
             </div>
+          </div>
         </section>
 
         <!--desserts section-->
         <h3 class="row-heading">Deserts</h3>
-        <section class ="row deserts"> 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/brownie-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/brownie-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/brownie-80.jpg" alt="brownie">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Brownie</span>
-                        <span class="menu-item-price">$12</span>
-                    </h4>
-                    <p>Dark chocolate brownie with a selection of seasonal fruits.</p>    
-                </div>  
+        <section class="row deserts">
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/brownie-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/brownie-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/brownie-80-min.jpg" alt="brownie" />
+              </picture>
+              <figcaption>
+                Brownie by
+                <a
+                  href="https://flickr.com/photos/asbjorn_floden/224270751/in/photolist-AvN8mX-qNuBpf-o6YgaD-8RBxza-eZkKPe-fnfjX-pbysmS-7veT7V-4TaULZ-5sBi3F-aC8c5a-MLZsB-kPrT6-nmwre-4HJz39-dFwKC7-bvYx7S-pQZdrD-rpdupm-rntsDi-4ppffj-djCwji-99rUDr-dFww5C-aa6rrp-9tPV5V-393LUC-dCCL5F-FM19S5-eXTAyr-tLxjR-dotWMq-6DsLPd-99v319-2eqvuCH-ewf3W-b9mDBX-6hWwWF-99rUrg-dCZxwp-nAKSib-4gY6YE-njg69w-b8bUAk-fGet4c-92Bzk7-bG97x-cG9mkJ-9Drfuv-83fuCd/"
+                  >Asbjørn Floden</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Brownie</span>
+                <span class="menu-item-price">$12</span>
+              </h4>
+              <p>Dark chocolate brownie with a selection of seasonal fruits.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/cheesecake-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/cheesecake-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/cheesecake-80.jpg" alt="cheesecake">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Cheesecake</span>
-                        <span class="menu-item-price">$10</span>
-                    </h4>
-                    <p>Cheesecake of the day. Check the specials menu or ask us about today's flavour.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/cheesecake-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/cheesecake-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img
+                  src="../images/mobile/cheesecake-80-min.jpg"
+                  alt="cheesecake"
+                />
+              </picture>
+              <figcaption>
+                Cheesecake by
+                <a
+                  href="https://www.flickr.com/photos/nayukim/4269027413/in/photolist-AvN8mX-qNuBpf-o6YgaD-8RBxza-eZkKPe-fnfjX-pbysmS-7veT7V-4TaULZ-5sBi3F-aC8c5a-MLZsB-kPrT6-nmwre-4HJz39-dFwKC7-bvYx7S-pQZdrD-rpdupm-rntsDi-4ppffj-djCwji-99rUDr-dFww5C-aa6rrp-9tPV5V-393LUC-dCCL5F-FM19S5-eXTAyr-tLxjR-dotWMq-6DsLPd-99v319-2eqvuCH-ewf3W-b9mDBX-6hWwWF-99rUrg-dCZxwp-nAKSib-4gY6YE-njg69w-b8bUAk-fGet4c-92Bzk7-bG97x-cG9mkJ-9Drfuv-83fuCd/"
+                  >Nayuki</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Cheesecake</span>
+                <span class="menu-item-price">$10</span>
+              </h4>
+              <p>
+                Cheesecake of the day. Check the specials menu or ask us about
+                today's flavour.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/chocolatePud-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/chocolatePud-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/chocolatePud-80.jpg" alt="Self-saucing Chocolate Pudding">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Self-Saucing Chocolate Pudding</span>
-                        <span class="menu-item-price">$12</span>
-                    </h4>
-                    <p>New Zealand's own chocolate delecacy. With your choice of ice-cream.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/chocolatePud-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/chocolatePud-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img
+                  src="../images/mobile/chocolatePud-80-min.jpg"
+                  alt="Self-saucing Chocolate Pudding"
+                />
+              </picture>
+              <figcaption>
+                Chocolate Pudding by
+                <a
+                  href="https://www.flickr.com/photos/smemon/16278703472/in/photolist-AvN8mX-qNuBpf-o6YgaD-8RBxza-eZkKPe-fnfjX-pbysmS-7veT7V-4TaULZ-5sBi3F-aC8c5a-MLZsB-kPrT6-nmwre-4HJz39-dFwKC7-bvYx7S-pQZdrD-rpdupm-rntsDi-4ppffj-djCwji-99rUDr-dFww5C-aa6rrp-9tPV5V-393LUC-dCCL5F-FM19S5-eXTAyr-tLxjR-dotWMq-6DsLPd-99v319-2eqvuCH-ewf3W-b9mDBX-6hWwWF-99rUrg-dCZxwp-nAKSib-4gY6YE-njg69w-b8bUAk-fGet4c-92Bzk7-bG97x-cG9mkJ-9Drfuv-83fuCd/kr.com/photos/nayukim/4269027413/in/photolist-AvN8mX-qNuBpf-o6YgaD-8RBxza-eZkKPe-fnfjX-pbysmS-7veT7V-4TaULZ-5sBi3F-aC8c5a-MLZsB-kPrT6-nmwre-4HJz39-dFwKC7-bvYx7S-pQZdrD-rpdupm-rntsDi-4ppffj-djCwji-99rUDr-dFww5C-aa6rrp-9tPV5V-393LUC-dCCL5F-FM19S5-eXTAyr-tLxjR-dotWMq-6DsLPd-99v319-2eqvuCH-ewf3W-b9mDBX-6hWwWF-99rUrg-dCZxwp-nAKSib-4gY6YE-njg69w-b8bUAk-fGet4c-92Bzk7-bG97x-cG9mkJ-9Drfuv-83fuCd/"
+                  >Sean MacEntee
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name"
+                  >Self-Saucing Chocolate Pudding</span
+                >
+                <span class="menu-item-price">$12</span>
+              </h4>
+              <p>
+                New Zealand's own chocolate delecacy. With your choice of
+                ice-cream.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/pavlova-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/pavlova-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/pavlova-80.jpg" alt="pavlova">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Pavlova</span>
-                        <span class="menu-item-price">$10</span>
-                    </h4>
-                    <p>Crispy on the outside and a melt in your mouth middle. With fruit and cream.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/pavlova-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/pavlova-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/pavlova-80-min.jpg" alt="pavlova" />
+              </picture>
+              <figcaption>
+                Pavlova by
+                <a
+                  href="https://www.flickr.com/photos/smemon/22653308411/in/photolist-AvN8mX-qNuBpf-o6YgaD-8RBxza-eZkKPe-fnfjX-pbysmS-7veT7V-4TaULZ-5sBi3F-aC8c5a-MLZsB-kPrT6-nmwre-4HJz39-dFwKC7-bvYx7S-pQZdrD-rpdupm-rntsDi-4ppffj-djCwji-99rUDr-dFww5C-aa6rrp-9tPV5V-393LUC-dCCL5F-FM19S5-eXTAyr-tLxjR-dotWMq-6DsLPd-99v319-2eqvuCH-ewf3W-b9mDBX-6hWwWF-99rUrg-dCZxwp-nAKSib-4gY6YE-njg69w-b8bUAk-fGet4c-92Bzk7-bG97x-cG9mkJ-9Drfuv-83fuCd"
+                  >Sean MacEntee
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Pavlova</span>
+                <span class="menu-item-price">$10</span>
+              </h4>
+              <p>
+                Crispy on the outside and a melt in your mouth middle. With
+                fruit and cream.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/sponge-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/sponge-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/sponge-80.jpg" alt="Sponge and Mouse">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">Sponge and Mouse</span>
-                        <span class="menu-item-price">$15</span>
-                    </h4>
-                    <p>Green mouse slice and a light and fluffy sponge.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/sponge-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/sponge-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img
+                  src="../images/mobile/sponge-80-min.jpg"
+                  alt="Sponge and Mouse"
+                />
+              </picture>
+              <figcaption>Sponge and Mouse</figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">Sponge and Mouse</span>
+                <span class="menu-item-price">$15</span>
+              </h4>
+              <p>Green mouse slice and a light and fluffy sponge.</p>
             </div>
+          </div>
         </section>
 
         <!-- drinks section-->
         <h3 class="row-heading">Drinks</h3>
-        <section class ="row drinks"> 
-            
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/beer-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/beer-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/beer-80.jpg" alt="beer">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Amber One</span>
-                        <span class="menu-item-price">$11</span>
-                    </h4>
-                    <p>Beer from the beer company.</p>    
-                </div>  
+        <section class="row drinks">
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/beer-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/beer-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/beer-80-min.jpg" alt="beer" />
+              </picture>
+              <figcaption>The Amber One</figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Amber One</span>
+                <span class="menu-item-price">$11</span>
+              </h4>
+              <p>Beer from the beer company.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/whiteWine-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/whiteWine-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/whiteWine-80.jpg" alt="white wine">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The White One</span>
-                        <span class="menu-item-price">$13</span>
-                    </h4>
-                    <p>White wine from the white wine company.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/whiteWine-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/whiteWine-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/whiteWine-80-min.jpg" alt="white wine" />
+              </picture>
+              <figcaption>
+                The White One by
+                <a
+                  href="https://flickr.com/photos/dcbauer/3485439452/in/photolist-6iZMHE-xsmRYZ-d9ciWC-bgKnxz-DxsY99-djG3V4-dXVVt8-HMjYx-dPMmhe-BiPvBH-E1wgcp-eMF7EV-N4p9mD-dk4Af3-4yJ6VE-i2Niz-9MxLT5-NjwEv5-pch3Rc-YGkNum-3L1MXC-314B1o-qDVqv6-D5ifc5-eoDzEj-BjjrNK-24DTBDr-5W93cL-Fyq56r-8KNLuo-otJXh8-b3gCDz-8kw32E-djA8Kc-8tdu7Z-2ekmPF-4C95Tz-vKLF9y-MmpSna-axsURV-LDdALb-g2gVLX-5FAHKx-GmhmNX-218gpeV-5RDFA2-a85ydv-hdnhdV-p57ss-acEZmV"
+                  >DBPerko</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The White One</span>
+                <span class="menu-item-price">$13</span>
+              </h4>
+              <p>White wine from the white wine company.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/redWine-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/redWine-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/redWine-80.jpg" alt="red wine">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Red One</span>
-                        <span class="menu-item-price">$14</span>
-                    </h4>
-                    <p>Red wine from the red wine company.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/redWine-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/redWine-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/redWine-80-min.jpg" alt="red wine" />
+              </picture>
+              <figcaption>
+                The Red One
+                <a
+                  href="https://www.flickr.com/photos/dinnerseries/19700577576/in/photolist-w1SBmC-8KNLuo-QCtESd-ixzUwE-tvqLRV-bZe1wd-2HPxAj-8dSbqg-63cHyC-w3x7cN-arTPJJ-73UjZA-9vDK8u-7GtAp9-6GSSxB-48JpEU-8Rdpq-9bkXgZ-2SuUu2-y1zjw2-b5ZwpR-7DZBG4-b5Zx3V-7HxHxy-BeCmN6-6bHkK4-99U38r-dwPZLN-aEyznT-7pkjSW-4mpBF4-6GSSqt-bAw7Vh-6GSS56-ivHpN5-5E2Mka-HSEYoA-H6SuAc-hwdZS-CtQVCf-CNNCgm-RvPqgN-6GSSfR-aoFRj6-4XUgFg-eN4Eu4-6vxgBG-9YBQ9e-21DFguW-2gszkjg"
+                  >Didriks
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Red One</span>
+                <span class="menu-item-price">$14</span>
+              </h4>
+              <p>Red wine from the red wine company.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/blue-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/blue-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/blue-80.jpg" alt="blue drink">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Blue One</span>
-                        <span class="menu-item-price">$12</span>
-                    </h4>
-                    <p>Our blue cocktail. Blueberries with a tropical twist.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/blue-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/blue-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/blue-80-min.jpg" alt="blue drink" />
+              </picture>
+              <figcaption>
+                The Blue One by
+                <a
+                  href="https://www.flickr.com/photos/jhamidon/3344196478/in/photolist-66vT6Y-2mGRZnR-p4mFtz-eRFxQz-dj1UQr-52So5w-arCSr5-eRFwJH-CqhLa5-6qTU6D-eRSWjA-eRFu8a-7D4yJD-eRSSgU-2U9RG-pkyC2t-aKWkyK-efpcE2-fho2DS-fh8P4P-fho2Tm-fh8Pkn-4iDHdb-2gLzPX6-5gVPk1-x6YNGm-Auryh4-B4UAFJ-Dakz2L-As8KGq-B762AF-7j8aVC-5WrqVe-A952tY-a8HCFC-B7639K-CSMs19-APot5z-AvMDJS-2LtyX-eRF1ci-eRSs3G-ctVWR-6hyGjx-5VrrsN-4WTCJC-WbkisM-MXGH-niSNi3-HK4FF"
+                  >Joey Hamidon</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Blue One</span>
+                <span class="menu-item-price">$12</span>
+              </h4>
+              <p>Our blue cocktail. Blueberries with a tropical twist.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/green-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/green-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/green-80.jpg" alt="green drink">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Green One</span>
-                        <span class="menu-item-price">$12</span>
-                    </h4>
-                    <p>Our green smoothie. Spinnach, cucumber and all things green.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/green-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/green-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/green-80-min.jpg" alt="green drink" />
+              </picture>
+              <figcaption>
+                The Green One by
+                <a
+                  href="https://www.flickr.com/photos/joyosity/8050256874/in/photolist-dgnEUj-dgnCPt-dgnESA-8jFitS-cWEMDL-cJuVDN-viBFzx-cWEMW3-b3wxi8-2mJgyKd-5XopRq-cBEn8Q-NAj4u-9gLnyy-24gZV1u-rpTvFU-2RqBQx-2W29k9-8pNnVW-9jsxiM-2g3cmwv-4BirW4-27wS32o-7ckNUq-EuVmr-6X9YXi-7eZ1X5-7B7xNr-6XdYF3-6XdYCS-S3gmnB-6zWWzP-5ivS59-QKmmx-9Pxh3h-9toe8v-a8XRqy-9d44ky-yhCJRw-7xZktq-98d16R-bMtDuM-98cZvk-98g9hh-98d13X-6oA5Yq-98g9Bh-98cZLR-CoGKQ-98cZCD"
+                  >Joy
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Green One</span>
+                <span class="menu-item-price">$12</span>
+              </h4>
+              <p>
+                Our green smoothie. Spinnach, cucumber and all things green.
+              </p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/orange-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/orange-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/orange-80.jpg" alt="orange drink">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Orange One</span>
-                        <span class="menu-item-price">$17</span>
-                    </h4>
-                    <p>Freshly squeezed orange juice.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/orange-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/orange-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/orange-80-min.jpg" alt="orange drink" />
+              </picture>
+              <figcaption>
+                The Orange One by
+                <a
+                  href="https://www.flickr.com/photos/leszekleszczynski/5084702426/in/photolist-8KjqTd-2kHpULe-xhA5rp-2iLLWTh-21hqcQQ-4kmWtW-7Upkdf-2itE825-2kAcnxo-qTFidR-rb98VD-7p6W6D-JvmS-2iiZiiV-DkDXHn-ork3Q-bxyNzG-ndp55S-9ac8Q2-oqkZNE-8ojBs1-qJwoLj-pfqcj-rb99tn-qTy18G-2jz7Nrw-6QaPtH-2m5ZsF-2kTLMe1-21SAMch-4Vz65X-b5ZQY-e4aMic-22r16nm-MVXeB-7s2nMh-2ciQSC4-TFfZ2U-5FUn3F-EX7akG-59BfAz-JaqoBt-7KwEey-5QH9EE-2eoK3HF-2mjMQhu-mMc5jy-2ciEwwd-r8QKdb-rb9aQv"
+                  >Leszek Leszczynski</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Orange One</span>
+                <span class="menu-item-price">$17</span>
+              </h4>
+              <p>Freshly squeezed orange juice.</p>
             </div>
+          </div>
 
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/coffee-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/coffee-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/coffee-80.jpg" alt="coffee">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Golden One</span>
-                        <span class="menu-item-price">$6</span>
-                    </h4>
-                    <p>Golden roasted Cuban Coffee.</p>    
-                </div>  
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/coffee-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/coffee-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/coffee-80-min.jpg" alt="coffee" />
+              </picture>
+              <figcaption>
+                The Golden One by
+                <a
+                  href="https://www.flickr.com/photos/fbohac/7576069660/in/photolist-cxtkyG-2f5E7U6-cu9MoA-349iv-zbSTU-HeFwMy-3VVBKg-dz1VFC-dEK8v5-8fof6q-YvFraW-7NwRMW-cPJ8QU-ak3bTV-7fVeKb-asxwhN-5GEGNZ-pYjwFL-9ftSCr-25MaCRb-6o1ZXM-5DFjxX-8Z51Xk-8SymQb-poDmxP-8U3mfw-4GwgtG-6qAxUb-tgRuL-cYrE7d-91AH7E-boNWVz-bzNAc4-4i3qzL-ojtKQ-317XBQ-9mvqy6-pUSBv-8WFVFT-9myu89-bL9vA2-fFmKCB-8XkR2S-NP2SBk-5smuvZ-4hYkJV-54p8HJ-D2TpS-7Jge3Z-bqg1DX"
+                  >Fil.Al
+                </a>
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Golden One</span>
+                <span class="menu-item-price">$6</span>
+              </h4>
+              <p>Golden roasted Cuban Coffee.</p>
             </div>
-            <div class ="menu-item">
-                <figure class ="menu-item-image">
-                    <picture>
-                        <source srcset="../images/large/tea-125.jpg" media="(min-width:768px"> 
-                        <source srcset="../images/medium/tea-100.jpg" media="(min-width:480px"> 
-                        <img src="../images/mobile/tea-80.jpg" alt="teak">
-                    </picture>
-                    <figcaption>Photo Credit</figcaption>
-                </figure>
-                <div class="menu-item-text">
-                    <h4 class="menu-item-heading">
-                        <span class="menu-item-name">The Floral One</span>
-                        <span class="menu-item-price">$7</span>
-                    </h4>
-                    <p>Floral blend of New Zealand tea.</p>    
-                </div>  
+          </div>
+          <div class="menu-item">
+            <figure class="menu-item-image">
+              <picture>
+                <source
+                  srcset="../images/large/tea-125-min.jpg"
+                  media="(min-width:768px"
+                />
+                <source
+                  srcset="../images/medium/tea-100-min.jpg"
+                  media="(min-width:480px"
+                />
+                <img src="../images/mobile/tea-80-min.jpg" alt="teak" />
+              </picture>
+              <figcaption>
+                The Floral One by
+                <a
+                  href="https://flickr.com/photos/coffeegeek/505462010/in/photolist-LECff-CmqrRh-5UWsji-cXSYZA-cFqqZs-5ToxS6-5TJsRr-cneeDS-v77JJo-crniSs-4Aggcw-bVC8wm-7zxAfR-andFce-bBR2qs-dukcy4-Lbs5Y-ivdnPR-m4hWas-cewXk3-2kg8a9P-6EyGY6-6HgAn5-2kZ2QSt-a1FJ4F-2mEAU72-2kvqKZw-2kvn9TC-2kvrhhX-2kvqL4E-2k3EGme-e9HsnU-7fzrDB-6jGTHg-2m51kgT-2k3p2T-5G1SPN-7ipmu3-yxG47-rmWfX3-84ts3N-93H5sK-7NNyb1-8WESK1-2k3A9Vx-bXaAPK-4LrtgN-qJa6nS-bAEYeq-7Cxi7f"
+                  >Mark</a
+                >
+              </figcaption>
+            </figure>
+            <div class="menu-item-text">
+              <h4 class="menu-item-heading">
+                <span class="menu-item-name">The Floral One</span>
+                <span class="menu-item-price">$7</span>
+              </h4>
+              <p>Floral blend of New Zealand tea.</p>
             </div>
+          </div>
         </section>
-    </div>
+      </div>
+    </main>
 
     <footer class="footer">
-        <p>Footer</p>
-        <a href="privacy.html"><p>privacy policy</p></a>
-      </footer>
-    
-
-</body>
+      <p>Footer</p>
+      <a href="privacy.html"><p>privacy policy</p></a>
+    </footer>
+  </body>
 </html>

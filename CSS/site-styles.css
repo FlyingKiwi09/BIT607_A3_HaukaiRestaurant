@@ -1,10 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/*Style body including
+- set font for page
+- max width and center (for large screens)*/
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  float: none;
+}
 
+/*main heading for each page - note is overridden on home page*/
+h1 {
+  margin: 0.5em;
+  margin-top: 0.6em;
+  font-size: calc(14px + 2vw);
+  text-align: center;
+}
+
+/*boarder around main content and light green background colour*/
+main {
+  margin: 1vw;
+  padding: 1vw;
+  background-color: #dfeee1;
+}
 
 /* Style the footer */
 .footer {
-    grid-area: footer;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}

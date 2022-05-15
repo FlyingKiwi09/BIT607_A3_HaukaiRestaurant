@@ -2,14 +2,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/site-styles.css"/>
+    <title>Huakai Restaurant Opening Hours</title>
+    <link rel="stylesheet" href="../CSS/site-styles.css"/>
     <link rel="stylesheet" href="../CSS/nav-styles.css" />
     <link rel="stylesheet" href="../CSS/hours-styles.css" />
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
      <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
@@ -26,13 +22,22 @@
         <li><a href="hours.html">Hours</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="reservations.html">Reservations</a></li>
+        <li class="staff"><a href="staff.html">Staff</a></li>
       </ul>
     </nav>
   </header>
+  <main>
+    <h1>Our Opening Hours</h1>
+<!--embedded google calendar showing opening hours -->
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&mode=AGENDA&showTabs=0&showCalendars=0&showPrint=0&showNav=0&showTitle=0&title=Haukai%20Opening%20Hours&src=cjhucWVhY2gzaGkyYjlsbTBpbHFoZXNlN29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2368a56b" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-    <h1>Our Opening Hourss</h1>
+    </main> 
 
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&mode=WEEK&showPrint=0&hl=en&showNav=1&showDate=1&showCalendars=0&showTitle=0&showTabs=0&src=cjhucWVhY2gzaGkyYjlsbTBpbHFoZXNlN29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2368a56b" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <footer class="footer">
+      <p>Footer</p>
+      <a href="privacy.html"><p>privacy policy</p></a>
+    </footer></main>
 
+    
   </body>
 </html>

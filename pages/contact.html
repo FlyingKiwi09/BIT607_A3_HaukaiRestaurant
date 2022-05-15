@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/site-styles.css"/>
-    <link rel="stylesheet" href="../CSS/nav-styles.css"/>
-    <link rel="stylesheet" href="../CSS/contact-styles.css"/>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huakai Restaurant Contact</title>
+    <link rel="stylesheet" href="../CSS/site-styles.css" />
+    <link rel="stylesheet" href="../CSS/nav-styles.css" />
+    <link rel="stylesheet" href="../CSS/contact-styles.css" />
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-   <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
-   <header class="header"> 
-    <a class="logo" href="../index.html">HR</a>
-    <!-- input checkbox to display side menu (when checked) or not (when unchecked)
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
+    <header class="header">
+      <a class="logo" href="../index.html">HR</a>
+      <!-- input checkbox to display side menu (when checked) or not (when unchecked)
     & label containing span which will be styled as a hamburger to turn side menu on/off-->
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="hours.html">Hours</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-      </ul>
-    </nav>
-  </header>
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li class="staff"><a href="staff.html">Staff</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
 
-    <h1>Contact Us</h1>
+      <div class="row-contact">
+        <div class="column-contact-left">
+          <address>
+            <div class="line">
+              <h2>Phone:</h2>
+              <p>000 948 7822</p>
+            </div>
+            <div class="line">
+              <h2>Email:</h2>
+              <p>restaurant@email.com</p>
+            </div>
+            <div class="line">
+              <h2>Address:</h2>
+              <p>14 restaurant street, City</p>
+            </div>
+          </address>
+        </div>
 
-    <div class="row-contact">
-      <div class="column-contact-left">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz" width="100%"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+        <div class="column-contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7377243715046!2d174.77762245153508!3d-41.314568949971836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38affb6ba1b543%3A0xd8f4593fa8b2b3a0!2s190%20Riddiford%20Street%2C%20Newtown%2C%20Wellington%206021!5e0!3m2!1sen!2snz!4v1649898899871!5m2!1sen!2snz"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-    
-      <div class="column-contact-right">
-          <h3>Contact:</h3> 
-          <p>000 948 7822</p>
-          <p>restaurant@email.com</p>
-          <h3>Address:</h3> 
-          <p>14 restaurant street</p>
-          <p>City</p>
-          
-      </div>
-    </div>
+    </main>
 
-  
-   
-  
-  <div class="footer">
-  <p>Footer</p>
-  </div>
-</div>
-
-
-</body>
+    <footer class="footer">
+      <p>Footer</p>
+      <a href="privacy.html"><p>privacy policy</p></a>
+    </footer>
+  </body>
 </html>
