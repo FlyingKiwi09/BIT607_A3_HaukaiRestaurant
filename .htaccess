@@ -2,3 +2,5 @@ AuthName "Password Protected Area"
 AuthUserFile C:\Users\alina\Projects\www\BIT607WebDevelopment\htDocs\.htpasswd
 AuthType Basic
 Require valid-user
+
+GitHub Test
