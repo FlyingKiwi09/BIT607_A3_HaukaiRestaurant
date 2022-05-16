@@ -1,4 +1,4 @@
 AuthName "Password Protected Area"
-AuthUserFile "https://ancient-headland-96654.herokuapp.com/.htpasswd"
+AuthUserFile "/app/www/private/.htpasswd"
 AuthType Basic
 Require valid-user
