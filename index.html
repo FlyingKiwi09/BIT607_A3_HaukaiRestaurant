@@ -3,62 +3,98 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huakai Restaurant Home</title>
-    <!-- Style sheets-->
+    <!-- unused Style sheets while working with bootstrap
     <link rel="stylesheet" href="CSS/site-styles.css" />
-    <link rel="stylesheet" href="CSS/index-styles.css" />
+    
     <link rel="stylesheet" href="CSS/nav-styles.css" />
+    -->
+    <!--bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    
   </head>
   <body>
-    <!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
-    <header class="header">
-      <a class="logo" href="index.html">HR</a>
-      <!-- input checkbox to display side menu (when checked) or not (when unchecked)
-      & label containing span which will be styled as a hamburger to turn side menu on/off-->
-      <input class="side-menu" type="checkbox" id="side-menu" />
-      <label class="hamb" for="side-menu"
-        ><span class="hamb-line"></span
-      ></label>
-      <nav class="nav">
-        <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-          <li><a href="pages/hours.html">Hours</a></li>
-          <li><a href="pages/menu.html">Menu</a></li>
-          <li><a href="pages/reservations.html">Reservations</a></li>
-          <li class="staff"><a href="private/staff.html">Staff</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- navigation bar-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Haukai Restaurant</a>
+      
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-    <main>
-      <h1>Huakai Restuarant</h1>
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
 
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link"href="pages/contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link"href="pages/hours.html">Hours</a></li>
+            <li class="nav-item"></li><a class="nav-link"href="pages/menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link"href="pages/reservations.html">Reservations</a></li>
+            <li class="nav-item staff"><a class="nav-link"href="private/staff.html">Staff</a></li>
+          </ul>
+        </div>
+          
+        
+      </div>
+     
+    </nav>
+    
+
+<div style="background-image: url('./images/table.jpg')" >
+
+
+
+    <main class="container p-0 pt-4" >
       <!--grid for quick link boxes with 3x boxes each with a key word and text-->
-      <div class="row">
-        <div class="box">
-          <a href="pages/reservations.html">
-            <p>Make your booking to</p>
-            <h2>Dine</h2>
+      <h1 class="display-1 text-center p-4 m-0 bg-dark text-white opacity-75 ">Welcome to Haukai</h1>
+      <div class="row justify-content-evenly mx-5 py-5">
+        <button class="col-md-3 btn btn-light  m-2 opacity-75">
+          <a
+            class="text-dark text-decoration-none"
+            href="pages/reservations.html"
+          >
+            <p class="lead">Make your booking to</p>
+            <h2 class="display-4 fw-bold">Dine</h2>
           </a>
-        </div>
-        <div class="box">
-          <a href="#">
-            <h2>Learn</h2>
-            <p>about our food, culture and recipes</p>
+        </button>
+
+        <button class="col-md-3 btn btn-light m-2 opacity-75">
+          <a class="text-dark text-decoration-none" href="#">
+            <h2 class="display-4 fw-bold">Learn</h2>
+            <p class="lead">about our food, culture and recipes</p>
           </a>
-        </div>
-        <div class="box">
-          <a href="pages/menu.html">
-            <p>Check what's on the</p>
-            <h2>Menu</h2>
+        </button>
+
+        <button type="button" class="col-md-3 btn btn-light m-2 opacity-75">
+          <a class="text-dark text-decoration-none" href="pages/menu.html">
+            <p class="lead">Check what's on the</p>
+            <h2 class="display-4 fw-bold">Menu</h2>
           </a>
-        </div>
+        </button>
       </div>
     </main>
 
-    <footer class="footer">
-      <p>Footer</p>
+  </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <p>Created by Alina Hookway</p>
+      
       <a href="pages/privacy.html"><p>privacy policy</p></a>
+       <!-- Copyright -->
+  <p>
+    © 2021 Copyright    
+  </p>
+  <!-- Copyright -->
     </footer>
+
+    <!--bootstrap js link-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

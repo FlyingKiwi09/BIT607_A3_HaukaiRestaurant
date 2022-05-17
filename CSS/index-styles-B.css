@@ -1,0 +1,16 @@
+/* background image for main content (mobile display) image is changed for larger screens below*/
+.container {
+  background-image: url("../images/mobile/table-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
