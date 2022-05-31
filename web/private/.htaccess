@@ -1,4 +1,4 @@
 AuthName "Password Protected Area"
-AuthUserFile "../web/.htpasswd"
+AuthUserFile "../../.htpasswd"
 AuthType Basic
 Require valid-user
