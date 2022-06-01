@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huakai Restaurant Privacy Statement</title>
-    <link rel="stylesheet" href="../CSS/site-styles.css"/>
-    <link rel="stylesheet" href="../CSS/nav-styles.css"/>
-    <link rel="stylesheet" href="../CSS/privacy-styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huakai Restaurant Privacy Statement</title>
 
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-08DGQR9C2D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!--bootstrap css-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+    />
 
-  gtag('config', 'G-08DGQR9C2D');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-08DGQR9C2D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-08DGQR9C2D');
+  </script>
 </head>
 
 <body>
   
   
-<!-- header containing: logo, navigation links and checkbox with label to create hamburger and toggle the side menu on and off on small screens-->
-<header class="header"> 
-    <a class="logo" href="../index.html">HR</a>
-    <!-- input checkbox to display side menu (when checked) or not (when unchecked)
-    & label containing span which will be styled as a hamburger to turn side menu on/off-->
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="hours.html">Hours</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li class="staff"><a href="../private/staff.html">Staff</a></li>
+ <!-- navigation bar-->
+ <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Haukai Restaurant</a>
+  
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link"href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link"href="hours.html">Hours</a></li>
+        <li class="nav-item"></li><a class="nav-link"href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link"href="reservations.html">Reservations</a></li>
+        <li class="nav-item staff"><a class="nav-link"href="../private/staff.html">Staff</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+      
+    
+  </div>
+ 
+</nav>
    
-  <main>
-    <h1>Haukai Restaurant Privacy Policy</h1>
+  <main class="container">
+    <h1 class="display-3 text-center p-2 m-2 text-white  rounded" style="background-image: url('../images/table.jpg')" >Haukai Restaurant Privacy Policy</h1>
 
     <h2>What data we collect:</h2>
     <p>When you visit our website we may collect information about your:</p>
@@ -78,10 +88,23 @@
 <p>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at restaurant@email.com, or 000 948 7822, or 14 Restaurant Street, City.</p>
 </main>
     
-<footer class="footer">
-  <p>Footer</p>
-  <a href="privacy.html"><p>privacy policy</p></a>
+<footer class="text-center text-lg-start bg-light text-muted">
+  <p class="text-center">Created by Alina Hookway</p>
+  
+  <a class="text-center" href="../pages/privacy.html"><p>privacy policy</p></a>
+   <!-- Copyright -->
+  <p class="text-center">
+    © 2022 Copyright    
+  </p>
+  <!-- Copyright -->
 </footer>
+
+  <!--bootstrap js link-->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"
+  ></script>
 
 </body>
 </html>
